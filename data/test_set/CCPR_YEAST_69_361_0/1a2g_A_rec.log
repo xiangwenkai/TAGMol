@@ -1,0 +1,27 @@
+2023-07-20 00:26:16,180 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2023-07-20 00:26:16,180 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2023-07-20 00:26:16,180 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2023-07-20 00:26:16,180 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2023-07-20 00:26:16,181 INFO:main.py:763:main_driver:Loading topology files.
+2023-07-20 00:26:16,208 INFO:main.py:765:main_driver:Loading molecule: data/test_set/CCPR_YEAST_69_361_0/1a2g_A_rec.pdb
+2023-07-20 00:26:16,208 ERROR:pdb.py:2584:read_pdb:Error parsing line: invalid literal for int() with base 10: 'Sel'
+2023-07-20 00:26:16,208 ERROR:pdb.py:2585:read_pdb:<REMARK Selection 'protein or ion and not water'>
+2023-07-20 00:26:16,209 ERROR:pdb.py:2586:read_pdb:Truncating remaining errors for record type:REMARK
+2023-07-20 00:26:16,214 WARNING:io.py:467:get_molecule:Warning: data/test_set/CCPR_YEAST_69_361_0/1a2g_A_rec.pdb is a non-standard PDB file.
+
+2023-07-20 00:26:16,214 ERROR:io.py:468:get_molecule:['REMARK']
+2023-07-20 00:26:16,214 INFO:main.py:770:main_driver:Setting up molecule.
+2023-07-20 00:26:16,221 INFO:main.py:408:setup_molecule:Created biomolecule object with 291 residues and 2866 atoms.
+2023-07-20 00:26:16,221 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2023-07-20 00:26:16,225 INFO:main.py:604:non_trivial:Loading forcefield.
+2023-07-20 00:26:16,228 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2023-07-20 00:26:16,229 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2023-07-20 00:26:16,229 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2023-07-20 00:26:16,229 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2023-07-20 00:26:16,259 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2023-07-20 00:26:16,359 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2023-07-20 00:26:16,488 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2023-07-20 00:26:16,692 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2023-07-20 00:26:16,694 INFO:main.py:713:non_trivial:Regenerating headers.
+2023-07-20 00:26:16,695 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2023-07-20 00:26:16,706 WARNING:main.py:311:print_pqr:Ignoring 392 header lines in output.

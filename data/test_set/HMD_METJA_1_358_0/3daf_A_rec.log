@@ -1,0 +1,90 @@
+2023-07-19 23:50:02,653 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2023-07-19 23:50:02,653 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2023-07-19 23:50:02,653 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2023-07-19 23:50:02,653 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2023-07-19 23:50:02,653 INFO:main.py:763:main_driver:Loading topology files.
+2023-07-19 23:50:02,682 INFO:main.py:765:main_driver:Loading molecule: data/test_set/HMD_METJA_1_358_0/3daf_A_rec.pdb
+2023-07-19 23:50:02,682 ERROR:pdb.py:2584:read_pdb:Error parsing line: invalid literal for int() with base 10: 'Sel'
+2023-07-19 23:50:02,682 ERROR:pdb.py:2585:read_pdb:<REMARK Selection 'protein or ion and not water'>
+2023-07-19 23:50:02,683 ERROR:pdb.py:2586:read_pdb:Truncating remaining errors for record type:REMARK
+2023-07-19 23:50:02,692 WARNING:io.py:467:get_molecule:Warning: data/test_set/HMD_METJA_1_358_0/3daf_A_rec.pdb is a non-standard PDB file.
+
+2023-07-19 23:50:02,692 ERROR:io.py:468:get_molecule:['REMARK']
+2023-07-19 23:50:02,692 INFO:main.py:770:main_driver:Setting up molecule.
+2023-07-19 23:50:02,706 INFO:main.py:408:setup_molecule:Created biomolecule object with 688 residues and 5182 atoms.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in HIS A 123.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in HIS A 123.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND1 in HIS A 123.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CD2 in HIS A 123.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CE1 in HIS A 123.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: NE2 in HIS A 123.
+2023-07-19 23:50:02,706 WARNING:main.py:424:setup_molecule:Multiple occupancies found in HIS A 123. At least one of the instances is being ignored.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in CYS A 176.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: SG in CYS A 176.
+2023-07-19 23:50:02,706 WARNING:main.py:424:setup_molecule:Multiple occupancies found in CYS A 176. At least one of the instances is being ignored.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in THR A 181.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in THR A 181.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG1 in THR A 181.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG2 in THR A 181.
+2023-07-19 23:50:02,706 WARNING:main.py:424:setup_molecule:Multiple occupancies found in THR A 181. At least one of the instances is being ignored.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in CYS A 204.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: SG in CYS A 204.
+2023-07-19 23:50:02,706 WARNING:main.py:424:setup_molecule:Multiple occupancies found in CYS A 204. At least one of the instances is being ignored.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in LEU A 290.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in LEU A 290.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in LEU A 290.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CD1 in LEU A 290.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CD2 in LEU A 290.
+2023-07-19 23:50:02,706 WARNING:main.py:424:setup_molecule:Multiple occupancies found in LEU A 290. At least one of the instances is being ignored.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in THR A 332.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in THR A 332.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG1 in THR A 332.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG2 in THR A 332.
+2023-07-19 23:50:02,706 WARNING:main.py:424:setup_molecule:Multiple occupancies found in THR A 332. At least one of the instances is being ignored.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in HIS A 123.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in HIS A 123.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND1 in HIS A 123.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CD2 in HIS A 123.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CE1 in HIS A 123.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: NE2 in HIS A 123.
+2023-07-19 23:50:02,706 WARNING:main.py:424:setup_molecule:Multiple occupancies found in HIS A 123. At least one of the instances is being ignored.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in CYS A 176.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: SG in CYS A 176.
+2023-07-19 23:50:02,706 WARNING:main.py:424:setup_molecule:Multiple occupancies found in CYS A 176. At least one of the instances is being ignored.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in THR A 181.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in THR A 181.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG1 in THR A 181.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG2 in THR A 181.
+2023-07-19 23:50:02,706 WARNING:main.py:424:setup_molecule:Multiple occupancies found in THR A 181. At least one of the instances is being ignored.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in CYS A 204.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: SG in CYS A 204.
+2023-07-19 23:50:02,706 WARNING:main.py:424:setup_molecule:Multiple occupancies found in CYS A 204. At least one of the instances is being ignored.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in LEU A 290.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in LEU A 290.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in LEU A 290.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CD1 in LEU A 290.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CD2 in LEU A 290.
+2023-07-19 23:50:02,706 WARNING:main.py:424:setup_molecule:Multiple occupancies found in LEU A 290. At least one of the instances is being ignored.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in THR A 332.
+2023-07-19 23:50:02,706 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in THR A 332.
+2023-07-19 23:50:02,707 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG1 in THR A 332.
+2023-07-19 23:50:02,707 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG2 in THR A 332.
+2023-07-19 23:50:02,707 WARNING:main.py:424:setup_molecule:Multiple occupancies found in THR A 332. At least one of the instances is being ignored.
+2023-07-19 23:50:02,707 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2023-07-19 23:50:02,712 WARNING:biomolecule.py:615:update_bonds:Gap in backbone detected between GLU A 344 and MET A 1!
+2023-07-19 23:50:02,713 INFO:main.py:604:non_trivial:Loading forcefield.
+2023-07-19 23:50:02,717 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2023-07-19 23:50:02,719 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue GLU A 344
+2023-07-19 23:50:02,720 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue GLU A 344
+2023-07-19 23:50:02,720 INFO:main.py:618:non_trivial:Attempting to repair 1 missing atoms in biomolecule.
+2023-07-19 23:50:02,721 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue GLU A 344
+2023-07-19 23:50:02,722 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue GLU A 344 at coordinates 28.748, -11.410, 2.727
+2023-07-19 23:50:02,722 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2023-07-19 23:50:02,723 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2023-07-19 23:50:02,780 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2023-07-19 23:50:03,080 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2023-07-19 23:50:03,409 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2023-07-19 23:50:03,878 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2023-07-19 23:50:03,882 INFO:main.py:713:non_trivial:Regenerating headers.
+2023-07-19 23:50:03,883 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2023-07-19 23:50:03,908 WARNING:main.py:311:print_pqr:Ignoring 392 header lines in output.

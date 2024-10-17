@@ -1,0 +1,144 @@
+2023-07-19 22:38:28,490 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2023-07-19 22:38:28,490 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2023-07-19 22:38:28,490 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2023-07-19 22:38:28,490 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2023-07-19 22:38:28,491 INFO:main.py:763:main_driver:Loading topology files.
+2023-07-19 22:38:28,518 INFO:main.py:765:main_driver:Loading molecule: data/test_set/GLMU_STRPN_2_459_0/4aaw_A_rec.pdb
+2023-07-19 22:38:28,518 ERROR:pdb.py:2584:read_pdb:Error parsing line: invalid literal for int() with base 10: 'Sel'
+2023-07-19 22:38:28,518 ERROR:pdb.py:2585:read_pdb:<REMARK Selection 'protein or ion and not water'>
+2023-07-19 22:38:28,518 ERROR:pdb.py:2586:read_pdb:Truncating remaining errors for record type:REMARK
+2023-07-19 22:38:28,536 WARNING:io.py:467:get_molecule:Warning: data/test_set/GLMU_STRPN_2_459_0/4aaw_A_rec.pdb is a non-standard PDB file.
+
+2023-07-19 22:38:28,536 ERROR:io.py:468:get_molecule:['REMARK']
+2023-07-19 22:38:28,536 INFO:main.py:770:main_driver:Setting up molecule.
+2023-07-19 22:38:28,563 INFO:main.py:408:setup_molecule:Created biomolecule object with 1365 residues and 10326 atoms.
+2023-07-19 22:38:28,563 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2023-07-19 22:38:28,573 WARNING:biomolecule.py:615:update_bonds:Gap in backbone detected between ASN A 191 and GLU A 195!
+2023-07-19 22:38:28,573 WARNING:biomolecule.py:615:update_bonds:Gap in backbone detected between GLN A 459 and SER A 2!
+2023-07-19 22:38:28,574 WARNING:biomolecule.py:615:update_bonds:Gap in backbone detected between ASN A 191 and GLU A 195!
+2023-07-19 22:38:28,575 WARNING:biomolecule.py:615:update_bonds:Gap in backbone detected between GLN A 459 and SER A 2!
+2023-07-19 22:38:28,575 WARNING:biomolecule.py:615:update_bonds:Gap in backbone detected between ASN A 191 and GLU A 195!
+2023-07-19 22:38:28,576 INFO:main.py:604:non_trivial:Loading forcefield.
+2023-07-19 22:38:28,579 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2023-07-19 22:38:28,582 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ASN A 146
+2023-07-19 22:38:28,582 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OD1 in residue ASN A 146
+2023-07-19 22:38:28,582 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom ND2 in residue ASN A 146
+2023-07-19 22:38:28,582 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ARG A 206
+2023-07-19 22:38:28,582 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue ARG A 206
+2023-07-19 22:38:28,582 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NE in residue ARG A 206
+2023-07-19 22:38:28,582 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CZ in residue ARG A 206
+2023-07-19 22:38:28,582 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH1 in residue ARG A 206
+2023-07-19 22:38:28,582 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH2 in residue ARG A 206
+2023-07-19 22:38:28,582 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ASN A 146
+2023-07-19 22:38:28,582 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OD1 in residue ASN A 146
+2023-07-19 22:38:28,582 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom ND2 in residue ASN A 146
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ARG A 206
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue ARG A 206
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NE in residue ARG A 206
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CZ in residue ARG A 206
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH1 in residue ARG A 206
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH2 in residue ARG A 206
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ASN A 146
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OD1 in residue ASN A 146
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom ND2 in residue ASN A 146
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ARG A 206
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue ARG A 206
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NE in residue ARG A 206
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CZ in residue ARG A 206
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH1 in residue ARG A 206
+2023-07-19 22:38:28,583 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH2 in residue ARG A 206
+2023-07-19 22:38:28,584 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue GLN A 459
+2023-07-19 22:38:28,584 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ASN A 146
+2023-07-19 22:38:28,584 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OD1 in residue ASN A 146
+2023-07-19 22:38:28,584 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom ND2 in residue ASN A 146
+2023-07-19 22:38:28,584 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ARG A 206
+2023-07-19 22:38:28,584 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue ARG A 206
+2023-07-19 22:38:28,584 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NE in residue ARG A 206
+2023-07-19 22:38:28,584 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CZ in residue ARG A 206
+2023-07-19 22:38:28,584 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH1 in residue ARG A 206
+2023-07-19 22:38:28,584 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH2 in residue ARG A 206
+2023-07-19 22:38:28,585 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ASN A 146
+2023-07-19 22:38:28,585 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OD1 in residue ASN A 146
+2023-07-19 22:38:28,585 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom ND2 in residue ASN A 146
+2023-07-19 22:38:28,585 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ARG A 206
+2023-07-19 22:38:28,585 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue ARG A 206
+2023-07-19 22:38:28,585 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NE in residue ARG A 206
+2023-07-19 22:38:28,585 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CZ in residue ARG A 206
+2023-07-19 22:38:28,585 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH1 in residue ARG A 206
+2023-07-19 22:38:28,585 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH2 in residue ARG A 206
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ASN A 146
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OD1 in residue ASN A 146
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom ND2 in residue ASN A 146
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ARG A 206
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue ARG A 206
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NE in residue ARG A 206
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CZ in residue ARG A 206
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH1 in residue ARG A 206
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH2 in residue ARG A 206
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue GLN A 459
+2023-07-19 22:38:28,586 INFO:main.py:618:non_trivial:Attempting to repair 28 missing atoms in biomolecule.
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ASN A 146
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OD1 in residue ASN A 146
+2023-07-19 22:38:28,586 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom ND2 in residue ASN A 146
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ARG A 206
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue ARG A 206
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NE in residue ARG A 206
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CZ in residue ARG A 206
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH1 in residue ARG A 206
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH2 in residue ARG A 206
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ASN A 146
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OD1 in residue ASN A 146
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom ND2 in residue ASN A 146
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ARG A 206
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue ARG A 206
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NE in residue ARG A 206
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CZ in residue ARG A 206
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH1 in residue ARG A 206
+2023-07-19 22:38:28,587 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH2 in residue ARG A 206
+2023-07-19 22:38:28,588 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ASN A 146
+2023-07-19 22:38:28,588 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OD1 in residue ASN A 146
+2023-07-19 22:38:28,588 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom ND2 in residue ASN A 146
+2023-07-19 22:38:28,588 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue ARG A 206
+2023-07-19 22:38:28,588 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue ARG A 206
+2023-07-19 22:38:28,588 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NE in residue ARG A 206
+2023-07-19 22:38:28,588 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CZ in residue ARG A 206
+2023-07-19 22:38:28,588 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH1 in residue ARG A 206
+2023-07-19 22:38:28,588 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NH2 in residue ARG A 206
+2023-07-19 22:38:28,589 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue GLN A 459
+2023-07-19 22:38:28,589 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue ASN A 146 at coordinates 37.472, 49.225, -2.819
+2023-07-19 22:38:28,589 INFO:biomolecule.py:1077:repair_heavy:Added atom OD1 to residue ASN A 146 at coordinates 38.304, 48.545, -3.424
+2023-07-19 22:38:28,589 INFO:biomolecule.py:1077:repair_heavy:Added atom ND2 to residue ASN A 146 at coordinates 36.370, 49.703, -3.409
+2023-07-19 22:38:28,589 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue ARG A 206 at coordinates 27.642, 44.219, 5.203
+2023-07-19 22:38:28,589 INFO:biomolecule.py:1077:repair_heavy:Added atom CD to residue ARG A 206 at coordinates 28.372, 42.919, 5.148
+2023-07-19 22:38:28,589 INFO:biomolecule.py:1077:repair_heavy:Added atom NE to residue ARG A 206 at coordinates 29.538, 42.913, 6.016
+2023-07-19 22:38:28,589 INFO:biomolecule.py:1077:repair_heavy:Added atom CZ to residue ARG A 206 at coordinates 30.350, 41.868, 6.139
+2023-07-19 22:38:28,590 INFO:biomolecule.py:1077:repair_heavy:Added atom NH1 to residue ARG A 206 at coordinates 30.040, 40.684, 5.624
+2023-07-19 22:38:28,590 INFO:biomolecule.py:1077:repair_heavy:Added atom NH2 to residue ARG A 206 at coordinates 31.475, 41.997, 6.839
+2023-07-19 22:38:28,590 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue ASN A 146 at coordinates 54.444, 6.624, -2.341
+2023-07-19 22:38:28,590 INFO:biomolecule.py:1077:repair_heavy:Added atom OD1 to residue ASN A 146 at coordinates 54.606, 7.675, -2.966
+2023-07-19 22:38:28,590 INFO:biomolecule.py:1077:repair_heavy:Added atom ND2 to residue ASN A 146 at coordinates 54.571, 5.423, -2.915
+2023-07-19 22:38:28,590 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue ARG A 206 at coordinates 63.833, 0.740, 5.610
+2023-07-19 22:38:28,591 INFO:biomolecule.py:1077:repair_heavy:Added atom CD to residue ARG A 206 at coordinates 64.593, 2.020, 5.523
+2023-07-19 22:38:28,591 INFO:biomolecule.py:1077:repair_heavy:Added atom NE to residue ARG A 206 at coordinates 64.029, 3.047, 6.384
+2023-07-19 22:38:28,591 INFO:biomolecule.py:1077:repair_heavy:Added atom CZ to residue ARG A 206 at coordinates 64.531, 4.275, 6.479
+2023-07-19 22:38:28,591 INFO:biomolecule.py:1077:repair_heavy:Added atom NH1 to residue ARG A 206 at coordinates 65.702, 4.590, 5.939
+2023-07-19 22:38:28,591 INFO:biomolecule.py:1077:repair_heavy:Added atom NH2 to residue ARG A 206 at coordinates 63.868, 5.196, 7.176
+2023-07-19 22:38:28,591 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue ASN A 146 at coordinates 82.853, 42.622, -2.924
+2023-07-19 22:38:28,591 INFO:biomolecule.py:1077:repair_heavy:Added atom OD1 to residue ASN A 146 at coordinates 81.850, 42.229, -3.525
+2023-07-19 22:38:28,592 INFO:biomolecule.py:1077:repair_heavy:Added atom ND2 to residue ASN A 146 at coordinates 83.820, 43.325, -3.525
+2023-07-19 22:38:28,592 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue ARG A 206 at coordinates 83.393, 53.818, 4.846
+2023-07-19 22:38:28,592 INFO:biomolecule.py:1077:repair_heavy:Added atom CD to residue ARG A 206 at coordinates 81.902, 53.835, 4.783
+2023-07-19 22:38:28,592 INFO:biomolecule.py:1077:repair_heavy:Added atom NE to residue ARG A 206 at coordinates 81.311, 52.848, 5.671
+2023-07-19 22:38:28,592 INFO:biomolecule.py:1077:repair_heavy:Added atom CZ to residue ARG A 206 at coordinates 79.998, 52.670, 5.793
+2023-07-19 22:38:28,592 INFO:biomolecule.py:1077:repair_heavy:Added atom NH1 to residue ARG A 206 at coordinates 79.130, 53.518, 5.254
+2023-07-19 22:38:28,592 INFO:biomolecule.py:1077:repair_heavy:Added atom NH2 to residue ARG A 206 at coordinates 79.544, 51.648, 6.514
+2023-07-19 22:38:28,592 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue GLN A 459 at coordinates 26.823, 33.414, 78.327
+2023-07-19 22:38:28,592 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2023-07-19 22:38:28,593 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2023-07-19 22:38:28,722 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2023-07-19 22:38:29,302 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2023-07-19 22:38:30,085 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2023-07-19 22:38:31,244 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2023-07-19 22:38:31,254 INFO:main.py:713:non_trivial:Regenerating headers.
+2023-07-19 22:38:31,256 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2023-07-19 22:38:31,307 WARNING:main.py:311:print_pqr:Ignoring 392 header lines in output.
