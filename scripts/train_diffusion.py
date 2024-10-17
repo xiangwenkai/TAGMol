@@ -19,6 +19,9 @@ from datasets.pl_data import FOLLOW_BATCH
 from models.molopt_score_model import ScorePosNet3D
 
 
+os.chdir('../')
+print(f"train_dock_guide.py system path: {os.getcwd()}")
+
 def get_auroc(y_true, y_pred, feat_mode):
     y_true = np.array(y_true)
     y_pred = np.array(y_pred)
@@ -131,16 +134,19 @@ if __name__ == '__main__':
                 ligand_v=batch.ligand_atom_feature_full,
                 batch_ligand=batch.ligand_element_batch
             )
-            loss, loss_pos, loss_v = results['loss'], results['loss_pos'], results['loss_v']
+            loss, loss_pos, loss_v, energy = results['loss'], results['loss_pos'], results['loss_v'], results['energy']
             loss = loss / config.train.n_acc_batch
-            loss.backward()
+            energy_loss = energy * (it / 200000)
+
+            total_loss = loss + energy_loss
+            total_loss.backward()
         orig_grad_norm = clip_grad_norm_(model.parameters(), config.train.max_grad_norm)
         optimizer.step()
 
         if it % args.train_report_iter == 0:
             logger.info(
-                '[Train] Iter %d | Loss %.6f (pos %.6f | v %.6f) | Lr: %.6f | Grad Norm: %.6f' % (
-                    it, loss, loss_pos, loss_v, optimizer.param_groups[0]['lr'], orig_grad_norm
+                '[Train] Iter %d | Loss %.6f (pos %.6f | v %.6f | mmff %.6f) | Lr: %.6f | Grad Norm: %.6f' % (
+                    it, loss, loss_pos, loss_v, energy_loss, optimizer.param_groups[0]['lr'], orig_grad_norm
                 )
             )
             for k, v in results.items():
@@ -153,7 +159,7 @@ if __name__ == '__main__':
 
     def validate(it):
         # fix time steps
-        sum_loss, sum_loss_pos, sum_loss_v, sum_n = 0, 0, 0, 0
+        sum_loss, sum_loss_pos, sum_energy, sum_loss_v, sum_n = 0, 0, 0, 0, 0
         sum_loss_bond, sum_loss_non_bond = 0, 0
         all_pred_v, all_true_v = [], []
         all_pred_bond_type, all_gt_bond_type = [], []
@@ -173,9 +179,13 @@ if __name__ == '__main__':
                         ligand_pos=batch.ligand_pos,
                         ligand_v=batch.ligand_atom_feature_full,
                         batch_ligand=batch.ligand_element_batch,
-                        time_step=time_step
+                        time_step=time_step,
+                        train=False
                     )
-                    loss, loss_pos, loss_v = results['loss'], results['loss_pos'], results['loss_v']
+                    loss, loss_pos, loss_v, energy = results['loss'], results['loss_pos'], results['loss_v'], results['energy']
+
+                    energy_loss = energy
+                    sum_energy += float(energy_loss) * batch_size
 
                     sum_loss += float(loss) * batch_size
                     sum_loss_pos += float(loss_pos) * batch_size
@@ -187,6 +197,9 @@ if __name__ == '__main__':
         avg_loss = sum_loss / sum_n
         avg_loss_pos = sum_loss_pos / sum_n
         avg_loss_v = sum_loss_v / sum_n
+
+        avg_energy = sum_energy / sum_n
+
         atom_auroc = get_auroc(np.concatenate(all_true_v), np.concatenate(all_pred_v, axis=0),
                                feat_mode=config.data.transform.ligand_atom_mode)
 
@@ -205,6 +218,7 @@ if __name__ == '__main__':
         writer.add_scalar('val/loss', avg_loss, it)
         writer.add_scalar('val/loss_pos', avg_loss_pos, it)
         writer.add_scalar('val/loss_v', avg_loss_v, it)
+        writer.add_scalar("Val/loss_energy", avg_energy, it)
         writer.flush()
         return avg_loss
 
